@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>隐藏切换侧边栏</title>
+		<link rel="stylesheet" href="css/nav-3.css">
+		<script src="js/jquery-3.4.0.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/font-awesome.css">
+	</head>
+	<body>
+		<div class="sidebar">
+			<ul>
+			<li><a href="#"><i class="fa fa-linux"></i></a></li>
+			<li><a href="#"><i class="fa fa-wordpress"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			<li><a href="#"><i class="fa fa-folder"></i></a></li>
+			<li><a href="#"><i class="fa fa-address-card-o"></i></a></li>
+			<li><a href="#"><i class="fa fa-image"></i></a></li>
+			<li><a href="#"><i class="fa fa-cloud"></i></a></li>
+			</ul>
+		</div>
+		
+		<a class="btn"></a>
+		
+		<script type="text/javascript">
+			$('.btn').on('click',function(){
+				$('.btn').toggleClass('btnc');
+				$('.sidebar').toggleClass('side');
+			});
+		</script>
+	</body>
+</html>

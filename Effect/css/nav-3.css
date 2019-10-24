@@ -1,0 +1,49 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	widows: 100%;
+	font-family: sans-serif;
+}
+.sidebar{
+	float: left;
+	width: 100px;
+	margin-left: -100px;
+	height: 700px;
+	background: #2e3e50;
+	overflow: hidden;
+	transition: 0.8s all;
+}
+.side{
+	margin-left: 0;
+}
+.sidebar ul{
+	list-style: none;
+	}
+.sidebar ul li a{
+	text-decoration: none;
+	color: white;
+	height: 80px;
+	width: 100%;
+	font-size: 40px;
+	line-height: 80px;
+	transition: 0.6 all;
+}
+.sidebar ul li a:hover{
+	background: #34495e;
+}
+.btn{
+	float: left;
+	padding: 0 10px;
+	font-size: 40px;
+	text-decoration: none;
+	color: #2c3e50;
+	font-family: Ionicons;
+	cursor: pointer;
+}
+.btn:before{
+	content: ">";
+}
+.btnc:before{
+	content: "<";
+}

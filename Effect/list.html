@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>滑动效果评论列表</title>
+		<meta name="viewport" content="width-device-width,initial-scale-1.0"/>
+		<link href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+		<link href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/list.css">
+		<script src="js/jquery-3.4.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.bootcss.com/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	</head>
+	<body>
+		
+		<div class="testimonal-section">
+			<div class="inner-width">
+				<h1>What Client Says</h1>
+				<div class="border"></div>
+				
+				<div class="slides owl-carousel">
+					<div class="testimonial">
+						<div class="test-info">
+							<img class="test-pic" src="img/fff.png" >
+							<div class="test-name">
+								<span>Client1</span>
+								@Client1
+							</div>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim iusto ex officia architecto autem numquam debitis. Porro quas molestiae voluptatum sit facere voluptas modi quisquam voluptatem aperiam ea qui aliquid.
+						</p>
+					</div>
+					
+					<div class="testimonial">
+						<div class="test-info">
+							<img class="test-pic" src="img/fff.png" >
+							<div class="test-name">
+								<span>Client2</span>
+								@Client2
+							</div>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim iusto ex officia architecto autem numquam debitis. Porro quas molestiae voluptatum sit facere voluptas modi quisquam voluptatem aperiam ea qui aliquid.
+						</p>
+					</div>
+					
+					<div class="testimonial">
+						<div class="test-info">
+							<img class="test-pic" src="img/fff.png" >
+							<div class="test-name">
+								<span>Client3</span>
+								@Client3
+							</div>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim iusto ex officia architecto autem numquam debitis. Porro quas molestiae voluptatum sit facere voluptas modi quisquam voluptatem aperiam ea qui aliquid.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(".owl-carousel").owlCarousel({
+				margin:10,
+				responsiveClass:true,
+				responsive:{
+					0:{
+						items:1
+					},
+					680:{
+						items:2
+					},
+					960:{
+						items:3
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

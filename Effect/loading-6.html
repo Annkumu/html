@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/loading-6.css">
+	</head>
+	<body>
+		<div id="loader">
+			<div class="count" id="countText">100%</div>
+			<div class="progress-bar">
+				<div class="progress" id="progress"></div>
+			</div>
+		</div>
+	
+	<script type="text/javascript">
+		function progress(){
+			let progr = document.getElementById( "progress");
+			let text = document.getElementById( "countText")
+			let counter = 5;
+			let progress = 25;
+			let id = setInterval( handler: function(){
+				if(progress == 500 && counter == 100){
+					clearInterval(id)
+				}else{
+					progress +=5;
+					counter +=1;
+					progr.style.width = progress +"px";
+					text.innerHTML = counter + "%";
+				}
+			},timeout:50)
+		}
+		progress();
+	</script>
+	<!-- <script src="js/main.js" type="text/javascript" charset="utf-8"></script> -->
+	</body>
+</html>

@@ -1,0 +1,67 @@
+body{
+	height: 700px;
+	overflow: hidden;
+	background-color: #f1f2f6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div{
+	position: relative;
+	overflow: hidden;
+	font-size: 160px;
+	font-weight: 600;
+	color: transparent;
+}
+div:after{
+	content: "hello world";
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 99em;
+	background-image: -webkit-linear-gradient(
+		left,
+		#D1EEFF 0%,
+		#B974ED 5%,
+		#7BCC5D 10%,
+		#88885B 15%,
+		#35B9FD 20%,
+		#08318b 25%,
+		#eb789e 30%,
+		#18c509 35%,
+		#0a9970 40%,
+		#6cf733 45%,
+		#dd4046 50%,
+		#8f3f3c 55%,
+		#c5d359 60%,
+		#febac6 65%,
+		#50befb 70%,
+		#3a495a 75%,
+		#d02721 80%,
+		#fafb92 85%,
+		#0daf53 90%,
+		#6efdb0 95%,
+		#50befb 100%
+	);
+	-webkit-background-clip:text;
+	color: transparent;
+	animation: hello 38s ease  infinite;
+}
+@keyframes hello{
+	0%{
+		background-position: 0 0;
+	}
+	25%{
+		background-position: -25em 0;
+	}
+	50%{
+		background-position: -50em 0;
+	}
+	75%{
+		background-position: -75em 0;
+	}
+	100%{
+		background-position: -99em 0;
+	}
+}
